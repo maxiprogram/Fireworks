@@ -1,0 +1,53 @@
+<GameScene>
+ <Resources>
+  <Shader id="0">Resources/Shader/default.vert;Resources/Shader/default.frag</Shader>
+  <Shader id="1">Resources/Shader/default_material.vert;Resources/Shader/default_material.frag</Shader>
+  <Shader id="2">Resources/Shader/default_material_alpha.vert;Resources/Shader/default_material_alpha.frag</Shader>
+  <Mesh id="0"></Mesh>
+  <Texture id="0">Resources/Texture/background.jpg</Texture>
+  <Texture id="1">Resources/Texture/cloud.png</Texture>
+  <Texture id="2">Resources/Texture/boom.png</Texture>
+  <Texture id="3">Resources/Texture/bullet.png</Texture>
+  <Texture id="4">Resources/Texture/particle.png</Texture>
+  <Texture id="5">Resources/Texture/particle1.png</Texture>
+ </Resources>
+
+ <Sprite id="0" sid="0" mid="0" tid="0"></Sprite>
+ <Sprite id="1" sid="0" mid="0" tid="1"></Sprite>
+ <Sprite id="2" sid="0" mid="0" tid="2"></Sprite>
+ <Sprite id="3" sid="1" mid="0" tid="3"></Sprite>
+ <Sprite id="4" sid="2" mid="0" tid="4"></Sprite>
+ <Sprite id="5" sid="2" mid="0" tid="5"></Sprite>
+
+ <GameObject name="BackGround" type="0">
+  <id_sprite>0</id_sprite>
+ </GameObject>
+
+ <GameObject name="CloudSystem" type="1">
+  <id_sprite>1</id_sprite>
+  <count_max>5</count_max>
+  <count_min>1</count_min>
+  <speed_max>50</speed_max>
+  <speed_min>1</speed_min>
+ </GameObject>
+
+ <GameObject name="ParticleSystem" type="2">
+  <scal_max>12</scal_max>
+  <scal_min>1</scal_min>
+  <count_max_circle>10</count_max_circle>
+  <count_min_circle>1</count_min_circle>
+  <count_max>100</count_max>
+  <count_min>20</count_min>
+  <speed_max>100</speed_max>
+  <speed_min>50</speed_min>
+  <distance_max>400</distance_max>
+  <distance_min>100</distance_min>
+ </GameObject>
+
+ <Camera name="MainCamera" type="1">
+  <pos_x>0</pos_x>
+  <pos_y>0</pos_y>
+  <pos_z>0</pos_z>
+ </Camera>
+
+</GameScene>
